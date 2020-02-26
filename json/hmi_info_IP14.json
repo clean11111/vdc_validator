@@ -1,0 +1,299 @@
+{
+    "portnumber" : 130,
+    "notifyUpdatesScheduled": {
+        "notifyUpdatesScheduledRequest": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "notifyUpdatesScheduledRequestPayload": {
+                    "campaignId": ["test"],
+                    "originatorId": "PIVI"
+                }
+            }
+        }
+    },
+    "notifyUpdatesScheduledToInstall": {
+        "notifyUpdatesScheduledToInstallRequest": {
+            "interfaceVersion": "1.0",
+            "messageData": [{
+                "campaignId": "test"
+            }]
+        }
+    },
+    "notifyUpdatesToBeScheduled": {
+        "notifyUpdatesToBeScheduledRequest": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "campaignId": "test"
+            }
+        }
+    },
+    "notifyUserPresentChangeStatus": {
+        "notifyUserPresentChangeStatusRequest": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "userPresentInVehicle": "present"
+            }
+        }
+    },
+    "notifyInstallationResult": {
+        "notifyInstallationResultRequest": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "campaignId": "test"
+            }
+        }
+    },
+    "notifyUpdatesChangeStatus": {
+        "notifyUpdatesChangeStatusRequest": {
+            "interfaceVersion": "1.0",
+            "messageData": [{
+                "campaignId": "test"
+            }]
+        }
+    },
+    "notifyVehicleChangeLanguage": {
+        "notifyVehicleLanguageChangeResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "getCurrentSOTAInstalledSoftware": {
+        "getCurrentSOTAInstalledSoftwareResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "getCurrentSOTAInstalledSoftwareResponsePayload": {
+                    "currentSoftwareComponent": [{
+                            "installedSOTAComponentDetails": {
+                                "publisherName": "test",
+                                "installDate": "2018-12-31T09:29+00:00",
+                                "name": "test",
+                                "campaignLongDescription": ["test"],
+                                "campaignSummary": ["test"]
+                            }
+                        }
+                    ],
+                    "JLRLegalDetails" : {
+                        "legalContactDetails": {
+                            "contactAddress": ["test"],
+                            "contactNumber": "test",
+                            "contactEmail": "test"
+                        }
+                    },
+                    "errorGeneralErrorResponse": "noError"
+                }
+            }
+        }
+    },
+    "getInstallationResult": {
+        "getInstallationResultResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "getInstallationResultResponsePayload": {
+                    "softwareUpdateInstallationResultDetails": {
+                        "campaignId": "test",
+                        "campaignDescription": ["test"],
+                        "campaignInstallationResultType": "complete",
+                        "installationNotAttemptedReason": "test",
+                        "errorInstallFailureDriveableStatus": "nonDrivable",
+                        "campaignName": "test"
+                    },
+                    "errorGeneralErrorResponse": "noError"
+                }
+            }
+        }
+    },
+    "getPreferencesVehicle": {
+        "getPreferencesVehicleResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "getPreferencesVehicleResponsePayload": {
+                    "preferencesVehicle": {
+                        "defaultInstallTime": {
+                            "defaultInstallStartTime": {
+                                "time": {
+                                    "hh": 12,
+                                    "mm": 34
+                                }
+                            }
+                        },
+                        "inVehicleScheduling": "true"
+                    },
+                    "errorGeneralErrorResponse": "noError"
+                }
+            }
+        }
+    },
+    "getSoftwareUpdateInformation": {
+        "getSoftwareUpdateInformationResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "getSoftwareUpdateInformationResponsePayload": {
+                    "softwareUpdateInformation": [
+                        {
+                            "softwareUpdate": {
+                                "vehicleId": "test",
+                                "operationId": "test",
+                                "campaignId": "test",
+                                "campaignName": "test",
+                                "campaignPriority": "High",
+                                "campaignTCs": ["test"],
+                                "campaignInformationURL": "test",
+                                "campaignInstallNotCommencedReason": "test",
+                                "softwareUpdateStatus": "inProgress",
+                                "estimatedInstallationTime": {
+                                    "time": {
+                                        "hh": 12,
+                                        "mm": 34
+                                    }
+                                },
+                                "authorisationStatus": "authorised",
+                                "vehicleSchedulePreference": "true",
+                                "campaignVersionNumber": "test",
+                                "campaignFileSize": "test",
+                                "campaignPublisher": "test",
+                                "campaignDescription": ["test"],
+                                "campaignSummary": ["test"],
+                                "campaignEndDate": "2018-12-31T09:29+00:00",
+                                "campaignSchedule": "2018-12-31T09:29+00:00",
+                                "campaignStartDate": "2018-12-31T09:29+00:00",
+                                "proposedInstallationTime": "idle"
+                            }
+                        }
+                    ],
+                    "errorGeneralErrorResponse": "noError"
+                }
+            }
+        }
+    },
+    "getTCsResult": {
+        "getTCsResultResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "getTCsResultResponsePayload": {
+                    "TCsStatus": "accept",
+                    "errorGeneralErrorResponse": "noError"
+                }
+            }
+        }
+    },
+    "getVehicleLanguage": {
+        "getVehicleLanguageRequest": {
+            "interfaceVersion": "1.0"
+        }
+    },
+    "setPreferencesVehicle": {
+        "setPreferencesVehicleResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "setTCsResult": {
+        "setTCsResultResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "setUpdateSchedule": {
+        "setUpdateScheduleResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "setSoftwareUpdateInstallImmediate": {
+        "setSoftwareUpdateInstallImmediateResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "setUnscheduleUpdate": {
+        "setUnscheduleUpdateResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "setUpdateAuthorisation": {
+        "setUpdateAuthorisationResponse": {
+            "interfaceVersion": "1.0",
+            "messageData": {
+                "errorGeneralErrorResponse": "noError"
+            }
+        }
+    },
+    "StartFileTransfer": {
+        "startFileTransferRequest": {
+            "header": {
+                "interfaceVersion": "1.0"
+            },
+            "filePath": "/pivi_iccm/"
+        }
+    },
+    "FileTransferStatus": {
+        "fileTransferStatusRequest": {
+            "header": {
+                "interfaceVersion": "1.0"
+            }
+        }
+    },
+    "FileTransferComplete": {
+        "fileTransferCompleteResponse": {
+            "header": {
+                "interfaceVersion": "1.0"
+            },
+            "response": "OK"
+        }
+    },
+    "InstallSoftware": {
+        "installRequest": {
+            "header": {
+                "interfaceVersion": "1.0"
+            },
+            "softwarePartNumber": "String",
+            "version": "String",
+            "size": "1234567",
+            "co-Ordinated": true
+        }
+    },
+    "InstallStatus": {
+        "installStatusRequest": {
+            "header": {
+                "interfaceVersion": "1.0"
+            }
+        }
+    },
+    "InstallComplete": {
+        "installCompleteResponse": {
+            "header": {
+                "interfaceVersion": "1.0"
+            },
+            "response": "OK"
+        }
+    },
+    "ActivationComplete": {
+        "activationCompleteResponse": {
+            "header": {
+                "interfaceVersion": "1.0"
+            }
+        },
+        "result": "OK"
+    },
+    "Test": {
+        "TestRequest": {
+            "header": {
+                "interfaceVersion": "1.0",
+                "transactionId": "1000"
+            }
+        }
+    }
+}
